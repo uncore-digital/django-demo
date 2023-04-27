@@ -1,0 +1,14 @@
+DateTime
+Django
+django-cors-headers
+django-environ
+djangorestframework
+djangorestframework-simplejwt
+psycopg2-binary
+python-jose
+requests
+gunicorn
+environ
+pylint
+msal
+msal-extensions
