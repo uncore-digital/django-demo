@@ -22,8 +22,7 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = env('DJANGO_SECRET_KEY', default=get_random_secret_key())
-SECRET_KEY='nt@z7s4d&y4l9r!8dj08(4i6hl%k$#r9fd%0++phv5e6zy9i)x'
+SECRET_KEY = env('DJANGO_SECRET_KEY', default=get_random_secret_key())
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
@@ -125,20 +124,6 @@ STATICFILES_DIRS = [
 ]  
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/' 
-
-# STATIC_URL = '/static/'
-# STATIC_ROOT = BASE_DIR / "static"
-
-# STATIC_URL = "static/"
-# STATIC_ROOT = BASE_DIR / "staticfiles"
-
-# STATIC_ROOT =  os.path.join(BASE_DIR, 'staticfiles')
-
-# if not DEBUG:
-#     STATIC_ROOT = '/home/django/www-data/example.com/static/'
-
-
-# STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
